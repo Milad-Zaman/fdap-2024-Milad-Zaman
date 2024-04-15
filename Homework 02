@@ -1,0 +1,15 @@
+#part 1:
+def present_value(Ct, r, t):
+    """
+    Calculate the present value of a future cash flow.
+
+
+    Ct : Future cash flow.
+    r : interest rate.
+    t : Number of periods into the future.
+
+    Returns:
+    float: Present value of the cash flow.
+    """
+    return Ct / (1 + r)**t
+print(f"The present value is  EUR {present_value(100, 0.03, 10):,.2f}")
