@@ -1,4 +1,5 @@
 #part 1:
+#task 1
 def present_value(Ct, r, t):
     """
     Calculate the present value of a future cash flow.
@@ -13,3 +14,19 @@ def present_value(Ct, r, t):
     """
     return Ct / (1 + r)**t
 print(f"The present value is  EUR {present_value(100, 0.03, 10):,.2f}")
+
+import matplotlib.pyplot as plt
+
+def present_value(Ct, r, t):
+ return Ct / (1 + r)**t
+
+C10 = 100
+discount_rates = [i/100 for i in range(26)]
+present_values = [present_value(C10, r, 10) for r in discount_rates]
+
+plt.plot(discount_rates, present_values)
+plt.title("Present Value as a Function of Discount Rate")
+plt.xlabel("Discount Rate (r)")
+plt.ylabel("Present Value")
+plt.grid(True)
+plt.show()
