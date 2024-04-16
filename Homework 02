@@ -108,11 +108,10 @@ ax1.tick_params(axis='y', labelcolor=color)
 # Create a secondary y-axis for returns
 ax2 = ax1.twinx()
 
-# Assuming the DAX returns column is named 'GDAXI' in the 'returns' DataFrame
 dax_returns = returns['.GDAXI']
 color = 'tab:red'
 ax2.set_ylabel('Return', color=color)
-ax2.plot(dates[1:], dax_returns, color=color)  # Returns are one element shorter than prices
+ax2.plot(dates[1:], dax_returns, color=color) 
 ax2.tick_params(axis='y', labelcolor=color)
 
 fig.tight_layout()
