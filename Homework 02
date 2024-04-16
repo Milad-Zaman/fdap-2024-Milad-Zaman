@@ -47,3 +47,85 @@ for payment in payments:
     total_present_value += present_value_annuity(payment, interest_rate, len(payments))
 
 print("Total present value:", total_present_value)
+
+
+
+
+#Part 2:
+#task 1
+import pandas as pd
+
+file_path = r'E:\Mouldes\Semester 4(summer 24)\Financial Data Analytics in Python\02_python_data.csv'
+
+# Load the data into a Pandas DataFrame
+prices = pd.read_csv(file_path)
+print(prices.head())
+
+
+import pandas as pd
+import numpy as np
+
+
+# Calculate arithmetic returns
+returns = prices.iloc[:, 1:].pct_change()
+
+# Calculate logarithmic returns
+logreturns = prices.iloc[:, 1:].apply(lambda x: np.log(x) - np.log(x.shift(1)))
+
+# Display the first 5 rows of each data frame
+print("First 5 rows of 'returns' DataFrame:")
+print(returns.head())
+print("\nFirst 5 rows of 'logreturns' DataFrame:")
+print(logreturns.head())
+
+
+#Task2 :
+import matplotlib.pyplot as plt
+dax_returns = returns['.GDAXI'].dropna()  # Drop any NaN values
+
+# Plot histogram
+plt.hist(dax_returns, bins=20, color='skyblue', edgecolor='black')
+plt.title('Histogram of DAX Returns')
+plt.xlabel('Return')
+plt.ylabel('Frequency')
+plt.grid(True)
+plt.show()
+
+
+# Plotting both the prices and the returns of the DAX in one plot
+dax_prices = prices['.GDAXI']
+dates = prices['Date']
+
+# Plot prices
+fig, ax1 = plt.subplots()
+
+color = 'tab:blue'
+ax1.set_xlabel('Date')
+ax1.set_ylabel('Price', color=color)
+ax1.plot(dates, dax_prices, color=color)
+ax1.tick_params(axis='y', labelcolor=color)
+
+# Create a secondary y-axis for returns
+ax2 = ax1.twinx()
+
+# Assuming the DAX returns column is named 'GDAXI' in the 'returns' DataFrame
+dax_returns = returns['.GDAXI']
+color = 'tab:red'
+ax2.set_ylabel('Return', color=color)
+ax2.plot(dates[1:], dax_returns, color=color)  # Returns are one element shorter than prices
+ax2.tick_params(axis='y', labelcolor=color)
+
+fig.tight_layout()
+plt.title('DAX Prices and Returns')
+plt.show()
+
+#Task 3:
+# Calculate the average return for each company
+average_returns = returns.mean()
+
+# Find the company with the highest average return
+company_highest_return = average_returns.idxmax()
+highest_return_value = average_returns.max()
+
+print("Company with the highest average return:", company_highest_return)
+print("Highest average return:", highest_return_value)
