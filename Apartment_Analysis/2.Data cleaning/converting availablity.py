@@ -41,5 +41,5 @@ df = pd.read_excel(file_path)
 df['Availability_in_hours'] = df['Availability'].apply(convert_to_hours)
 
 # Save the results back to a new Excel file
-output_file_path = 'converted_availability.xlsx'
+output_file_path = 'final_data.xlsx'
 df.to_excel(output_file_path, index=False)
