@@ -30,3 +30,18 @@ In conclusion, the size of the apartment, the number of rooms, and how close it 
 
 ## Part 2: Determinants of WG Listing Duration
 
+What are the most influential variables that affect the duration a WG listing remains online? As mentioned in the literature, recent studies show that key determinants include price, size, and location, with proximity to amenities like schools and bakeries playing a significant role (Marcelo Del Cajias & Freudenreich, 2023).In this analysis I want to answer this question with the data collected from web scraping of WG-gesucht for searching WG and apartments in Hamburg. In the **final_data.xlsx**, the data of Availability_in_hours, Price, Size, Rooms and location are used for an OLS regression. The equation of regression is: 
+
+$$
+Availability_in_hours = \beta_0 + \beta_1Price + \beta_2Size + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center + \beta_7Rooms
+$$
+
+where:
+- Availability_in_hours: the duration each Ad has been online on the WG-gesucht
+- Price : the rental price in €.
+- Size : size of the room in m².
+- Rooms: number of rooms
+- near-to-uni: dummy variable if the location of apartment is near to the university of Hamburg 1, otherwise 0.
+- near-to-airport: dummy variable if the location of apartment is near to the airport 1, otherwise 0.
+- near-to-hbf: dummy variable if the location of apartment is near to the central train stiation of Hamburg 1, otherwise 0.
+- near-to-city-center: dummy variable if the location of apartment is near to the city center of Hamburg 1, otherwise 0.
