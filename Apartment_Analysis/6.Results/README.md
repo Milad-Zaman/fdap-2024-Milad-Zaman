@@ -26,3 +26,7 @@ Apartments near the university **(near_to_uni=50.2030)** are associated with an 
 Based on these results larger apartments with more rooms have higher rents, as they offer more living space and possibly more amenities. This is consistent with the economic principle that more desirable and larger housing units have higher prices. In addition apartments near the university are significantly more expensive, likely due to high demand from students and university staff. This area may have additional amenities and services catering to the university community, increasing its attractiveness and rental prices.
 
 In conclusion, the size of the apartment, the number of rooms, and how close it is to the university are key factors in setting rental prices in Hamburg. But it also suggests that being close to the airport, the centeral train station, or the city center doesn't significantly affect rent prices. This might mean that more research or different factors need to be considered to understand their impact better.
+
+
+## Part 2: Determinants of WG Listing Duration
+
