@@ -30,14 +30,14 @@ In conclusion, the size of the apartment, the number of rooms, and how close it 
 
 ## Part 2: Determinants of WG Listing Duration
 
-What are the most influential variables that affect the duration a WG listing remains online? As mentioned in the literature, recent studies show that key determinants include price, size, and location, with proximity to amenities like schools and bakeries playing a significant role (Marcelo Del Cajias & Freudenreich, 2023).In this analysis I want to answer this question with the data collected from web scraping of WG-gesucht for searching WG and apartments in Hamburg. In the **final_data.xlsx**, the data of Availability_in_hours, Price, Size, Rooms and location are used for an OLS regression. The equation of regression is: 
+What are the most influential variables that affect the duration a WG listing remains online? As mentioned in the literature, recent studies show that key determinants include price, size, and location, with proximity to amenities like schools and bakeries playing a significant role (Marcelo Del Cajias & Freudenreich, 2023).In this analysis I want to answer this question with the data collected from web scraping of WG-gesucht for searching WG and apartments in Hamburg. In the **final_data.xlsx**, the data of Availability-in-hours, Price, Size, Rooms and location are used for an OLS regression. The equation of regression is: 
 
 $$
-Availability_in_hours = \beta_0 + \beta_1Price + \beta_2Size + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center + \beta_7Rooms
+Availability-in-hours = \beta_0 + \beta_1Price + \beta_2Size + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center + \beta_7Rooms
 $$
 
 where:
-- Availability_in_hours: the duration each Ad has been online on the WG-gesucht
+- Availability-in-hours: the duration each Ad has been online on the WG-gesucht
 - Price : the rental price in €.
 - Size : size of the room in m².
 - Rooms: number of rooms
@@ -45,3 +45,10 @@ where:
 - near-to-airport: dummy variable if the location of apartment is near to the airport 1, otherwise 0.
 - near-to-hbf: dummy variable if the location of apartment is near to the central train stiation of Hamburg 1, otherwise 0.
 - near-to-city-center: dummy variable if the location of apartment is near to the city center of Hamburg 1, otherwise 0.
+
+The results of the OLS can be seen in the second table in **Data analysis.ipynb**.
+
+The table of results of OLS shows that the intercept **(const =-86.7028)** represent the baseline availability in hours when all other variables are zero. The **(Price =-0.0708)** shows that each additional euro in rent is associated with a decrease in availability by approximately 0.07 hours, holding other factors constant and it is statistically significant. With **(Size =9.1430)**, each additional square meter of room size is associated with an increase in availability by approximately 9.14 hours, holding other factors constant. This is highly significant. The coefficient of **(Rooms=1.4313)** indicates each additional room is associated with an increase in availability by approximately 1.43 hours, but this effect is not statistically significant.
+
+Apartments near the university **(near_to_uni =11.8292)** have an availability duration increased by approximately 11.83 hours, however, this effect is not statistically significant. Apartments near the airport **(near_to_airport =-10.9290)** have an availability duration decreased by approximately 10.93 hours, but this effect also is not statistically significant. Proximity to the central train station **(near_to_hbf =0.4044)** has a negligible and statistically insignificant effect on availability and 
+proximity to the city center **(near_to_city_center =-4.2003)** has a small and statistically insignificant effect on availability.
