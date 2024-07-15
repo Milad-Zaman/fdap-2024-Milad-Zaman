@@ -19,3 +19,17 @@ Research on online rental platforms suggests that visual elements significantly 
 
 
 In conclusion, these studies highlight the complex and dynamic nature of real estate markets, indicating that different approaches to understanding and predicting the value of residential real estate in urban environments can be adopted depending on a research problem.
+
+
+
+
+## References 
+1. Del Cajias, M., & Freudenreich, A. (2023). What are tenants demanding the most? A machine learning approach for the prediction of time on market. 29th Annual European Real Estate Society Conference.
+
+2. Haider, M., & Miller, E.J. (2000). Effects of Transportation Infrastructure and Location on Residential Real Estate Values: Application of Spatial Autoregressive Techniques. Transportation Research Record, 1722, 1 - 8.
+
+3. Ruan, L., Lou, H., Xiao, W., & Lu, D. (2022). Understanding the Impacts of Public Facilities on Residential House Prices: Spatial Data-Driven Approach Applied in Hangzhou, China. Journal of Urban Planning and Development.
+
+4. Zhang, Y., Zhang, Y., & Qian, S. (2019). How to Price Your House: Exploring Price Determinants of Online Accommodation Rental. Wuhan International Conference on E-Business.
+
+5. Kimani, E.N., Kuria, B.T., & Ngigi, M.M. (2021). Analysis of Spatial Factors Affecting Rental House Prices: A Case Study of Nyeri Town Constituency, Kenya. Journal of Geosciences and Geomatics.
