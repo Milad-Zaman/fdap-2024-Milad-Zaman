@@ -3,7 +3,7 @@
 The purpose of this analysis is to determine the factors affecting the rental prices of WG and apartments in Hamburg, Germany. As shown in the literature , there are studies that show that factors such as the size of the room or apartment and the location have an effect on the rental price (Ndegwa, 2018; Engerstam et al., 2020; Drafor Amenyah & Fletcher, 2013; Haider & Miller, 2000; Iacono & Levinson, 2011). For this purpose, the variables of size, number of rooms and location were selected from among the data collected from WG-gesucht scraping to examine their relationship with rental price. The data of these variables can be seen in the **final_data.xlsx**. OLS regression method has been used to examine this relationship, and its equation is as follows:
 
 $$
-Price = \beta_0 + \beta_1Size + \beta_2Rooms + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center
+Price = \beta_0 + \beta_1Size + \beta_2Rooms + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center +  \epsilon
 $$
 
 where:
@@ -33,7 +33,7 @@ In conclusion, the size of the apartment, the number of rooms, and how close it 
 What are the most influential variables that affect the duration a WG listing remains online? As mentioned in the literature, recent studies show that key determinants include price, size, and location, with proximity to amenities like schools and bakeries playing a significant role (Marcelo Del Cajias & Freudenreich, 2023).In this analysis I want to answer this question with the data collected from web scraping of WG-gesucht for searching WG and apartments in Hamburg. In the **final_data.xlsx**, the data of Availability-in-hours, Price, Size, Rooms and location are used for an OLS regression. The equation of regression is: 
 
 $$
-Availability-in-hours = \beta_0 + \beta_1Price + \beta_2Size + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center + \beta_7Rooms
+Availability-in-hours = \beta_0 + \beta_1Price + \beta_2Size + \beta_3near-to-uni + \beta_4near-to-airport + \beta_5near-to-hbf + \beta_6near-to-city-center + \beta_7Rooms +  \epsilon
 $$
 
 where:
@@ -52,3 +52,7 @@ The table of results of OLS shows that the intercept **(const =-86.7028)** repre
 
 Apartments near the university **(near_to_uni =11.8292)** have an availability duration increased by approximately 11.83 hours, however, this effect is not statistically significant. Apartments near the airport **(near_to_airport =-10.9290)** have an availability duration decreased by approximately 10.93 hours, but this effect also is not statistically significant. Proximity to the central train station **(near_to_hbf =0.4044)** has a negligible and statistically insignificant effect on availability and 
 proximity to the city center **(near_to_city_center =-4.2003)** has a small and statistically insignificant effect on availability.
+
+It can be said according to the results, higher rental prices are associated with shorter availability durations. This could be because people think they are better or have nicer features. Bigger apartments stay on the market longer. This might be because they cost more overall, which makes them harder for many people to afford. Also, larger places might only appeal to a smaller group of people. The number of rooms in an apartment doesn't really change how long it takes to rent it out. This could mean that there's a good balance in what people want in terms of room count, or that the number of rooms doesn't strongly affect people's choices.
+
+To sum up, the cost and size of the apartment are the main factors that determine how long a listing remains available online. Apartments with higher prices usually get rented more quickly, suggesting that people might think higher prices mean better quality or more features. Bigger apartments stay on the market longer because they are more expensive, which makes them harder for many people to afford. The number of rooms and proximity to various key locations (university, airport, central train station, city center) do not significantly affect the duration a listing remains available, indicating that these factors might be less critical to renters compared to the size and price of the apartment.
