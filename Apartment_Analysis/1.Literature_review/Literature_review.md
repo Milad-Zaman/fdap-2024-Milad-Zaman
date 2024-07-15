@@ -33,3 +33,17 @@ In conclusion, these studies highlight the complex and dynamic nature of real es
 4. Zhang, Y., Zhang, Y., & Qian, S. (2019). How to Price Your House: Exploring Price Determinants of Online Accommodation Rental. Wuhan International Conference on E-Business.
 
 5. Kimani, E.N., Kuria, B.T., & Ngigi, M.M. (2021). Analysis of Spatial Factors Affecting Rental House Prices: A Case Study of Nyeri Town Constituency, Kenya. Journal of Geosciences and Geomatics.
+
+6. Hess, C., Acolin, A., Walter, R.J., Kennedy, I., Chasins, S.E., & Crowder, K. (2021). Searching for housing in the digital age: Neighborhood representation on internet rental housing platforms across space, platform, and metropolitan segregation. Environment and Planning A: Economy and Space, 53, 2012 - 2032.
+
+7. Suárez-Vega, R., & Hernández, J.M. (2020). Selecting Prices Determinants and Including Spatial Effects in Peer-to-Peer Accommodation. ISPRS Int. J. Geo Inf., 9, 259.
+
+8. Wu, J., Zheng, X., & Cai, J. (2021). Does Online Product Presentation Matter: An Empirical Analysis of the Effects of Listing Photos on Short-term Rental Purchases. Wuhan International Conference on E-Business.
+
+9. Yang, X., & Tian, M. (2022). To see and then to believe: how image affect tenant decision-making and satisfaction on short-term rental platform. Electronic Commerce Research, 1 - 25.
+
+10. Ert, E., Fleischer, A., & Magen, N. (2016). Trust and Reputation in the Sharing Economy: The Role of Personal Photos on Airbnb. DecisionSciRN: Financial Decision-Making (Topic).
+
+11. Hebdzyński, M. (2023). Quality information gaps in housing listings: Do words mean the same as pictures? Journal of Housing and the Built Environment, 38, 2399 - 2425.
+
+12. Kaller, T. (2019). Analyse von Online-Mietwohnungsanzeigen.
