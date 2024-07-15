@@ -16,4 +16,4 @@ where:
 - near-to-city-center: dummy variable if the location of apartment is near to the city center of Hamburg 1, otherwise 0.
 
 The results of the OLS can be seen in this table:
-![OLS price](Apartment_Analysis/6.Results/OLS price.PNG)
+![OLS price](/workspaces/fdap-2024-Milad-Zaman/Apartment_Analysis/6.Results/OLS price.PNG)
